@@ -9,7 +9,7 @@ return {
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     mason_lspconfig.setup({
-      ensure_installed = { "clangd", "lua_la" },
+      ensure_installed = { "clangd", "lua_ls" },
       automatic_installation = true,
       handlers = {
         function(server_name)
