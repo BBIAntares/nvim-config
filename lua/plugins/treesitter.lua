@@ -10,6 +10,7 @@ return {
 				"cmake",
 				"cpp",
 				"gitignore",
+                "lua",
 			},
 
 			-- matchup = {

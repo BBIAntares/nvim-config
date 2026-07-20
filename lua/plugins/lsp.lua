@@ -9,7 +9,7 @@ return {
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     mason_lspconfig.setup({
-      ensure_installed = { "clangd" },
+      ensure_installed = { "clangd", "lua_la" },
       automatic_installation = true,
       handlers = {
         function(server_name)
@@ -26,6 +26,16 @@ return {
 
         }
     end 
+
+    if server_name == "lua_ls" then
+        server_config.settings = {
+            Lua = {
+                diagnostics = {
+                    globals = { "vim" },
+                },
+            },
+        }
+    end
 
     require("lspconfig")[server_name].setup(server_config)
 end,
