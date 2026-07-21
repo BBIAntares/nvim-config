@@ -4,6 +4,8 @@
 
 * unzip
 
+* neovim
+
 #### Getting Started
 
 * Clone the repo:
