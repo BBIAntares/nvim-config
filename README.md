@@ -2,9 +2,11 @@
 
 * Git
 
-* unzip
+* neovim >= 0.11.3
 
-* neovim
+* clangd (c/c++ lsp)
+
+* lua-language-server (lsp)
 
 #### Getting Started
 
