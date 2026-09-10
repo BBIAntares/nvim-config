@@ -8,6 +8,8 @@
 
 * lua-language-server (lsp)
 
+* tree-sitter-cli 
+
 #### Getting Started
 
 * Clone the repo:
@@ -33,3 +35,12 @@ rm -rf ~/.config/nvim/.git
 nvim
 
 ```
+
+#### Parser installation
+
+```sh 
+
+:TSInstall rust
+
+```
+

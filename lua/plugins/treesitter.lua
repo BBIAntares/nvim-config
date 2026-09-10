@@ -1,12 +1,9 @@
 return {
      "nvim-treesitter/nvim-treesitter",
     build = ':TSUpdate',
-    opts = {
-        ensure_installed = {
-            "lua",
-            "rust",
-            "gitignore",
-        },
-    },
-
+    config = function ()
+        require( "nvim-treesitter" ).setup({
+            install_dir = vim.fn.stdpath('data') .. '/site'
+        })
+    end,
 }
