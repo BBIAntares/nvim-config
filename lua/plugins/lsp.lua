@@ -6,17 +6,14 @@ return {
         root_markers = { '.git', '' },
     }),
 
-    vim.lsp.config('clangd', {
-        cmd = {
-            'clangd', 
-            '--background-index',
-            '--clang-tidy',
-            '--query-driver=/usr/bin/g++,/usr/bin/gcc,/usr/bin/clang++,/usr/bin/clang',
-        },
-        filetypes = { 'objc', 'objcpp', 'c', 'cpp' },
+    vim.lsp.config('rust-analyzer', {
+        cmd = { '/bin/rust-analyzer' },
+        filetypes = { 'rust' },
+        root_markers = { 'Cargo.toml', '.git'},
+
     }),
 
-    vim.lsp.enable( 'lua_ls', 'clangd' ),
+    vim.lsp.enable( 'lua_ls', 'rust-analyzer' ),
 
 }
 

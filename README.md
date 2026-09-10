@@ -4,7 +4,7 @@
 
 * neovim >= 0.11.3
 
-* clangd (c/c++ lsp)
+* rust-analyzer & rust-src
 
 * lua-language-server (lsp)
 

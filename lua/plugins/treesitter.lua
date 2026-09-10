@@ -4,9 +4,7 @@ return {
     opts = {
         ensure_installed = {
             "lua",
-            "c", 
-            "cpp",
-            "cmake",
+            "rust",
             "gitignore",
         },
     },
