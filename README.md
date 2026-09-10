@@ -8,7 +8,9 @@
 
 * lua-language-server (lsp)
 
-* tree-sitter-cli 
+* tree-sitter-cli
+
+* gcc (for treesitter-cli)
 
 #### Getting Started
 
