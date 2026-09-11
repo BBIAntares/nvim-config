@@ -38,11 +38,4 @@ nvim
 
 ```
 
-#### Parser installation
-
-```sh 
-
-:TSInstall rust
-
-```
 

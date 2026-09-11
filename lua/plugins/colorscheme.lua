@@ -1,8 +1,10 @@
 return {
-    "folke/tokyonight.nvim",
+
+    "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
     config = function ()
-        vim.cmd[[colorscheme tokyonight-storm]]
+        vim.cmd("colorscheme cyberdream")
     end,
+
 }
